@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"timestamp": "9/10/2022, 11:11:08 p. m.",
+		"nombre": "Nevera Haceb 2 puertas 300L",
+		"descripcion": "Nevera de 2 puertas con congelador en la parte de abajo y nevera en la parte de arriba con capacidad para 300 litros de alimentos y bebidas. Tiene un diseño moderno y elegante que se adapta a cualquier cocina.",
+		"codigo": "NEV-300",
+		"foto": "https://i.ibb.co/k2Hw3p4/nevera.jpg",
+		"precio": 1500,
+		"stock": 10
+	},
+	{
+		"id": 2,
+		"timestamp": "9/10/2022, 11:11:08 p. m.",
+		"nombre": "Televisor Samsung 50 pulgadas",
+		"descripcion": "Televisor de 50 pulgadas con resolución 4K y sistema operativo Android. Tiene un diseño moderno y elegante que se adapta a cualquier salón.",
+		"codigo": "TV-50",
+		"foto": "https://i.ibb.co/Ldb7bt3/Sin-t-tulo-1.jpg",
+		"precio": 1000,
+		"stock": 10
+	},
+	{
+		"id": 3,
+		"timestamp": "9/10/2022, 11:11:08 p. m.",
+		"nombre": "Microondas Samsung 20 litros",
+		"descripcion": "Microondas de 20 litros con 5 niveles de potencia y 5 niveles de cocción. Tiene un diseño moderno y elegante que se adapta a cualquier cocina.",
+		"codigo": "MIC-20",
+		"foto": "https://i.ibb.co/dQ8N5jH/microondas.jpg",
+		"precio": 300,
+		"stock": 10
+	},
+	{
+		"id": 4,
+		"timestamp": "9/10/2022, 11:11:08 p. m.",
+		"nombre": "Lavadora Samsung 8kg",
+		"descripcion": "Lavadora de 8 kg con 5 programas de lavado y 5 niveles de centrifugado. Tiene un diseño moderno y elegante que se adapta a cualquier cocina.",
+		"codigo": "LAV-8",
+		"foto": "https://i.ibb.co/2KC6ZSq/lavadora.jpg",
+		"precio": 500,
+		"stock": 10
+	}
+]

@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "084fdf00-56c8-44da-b97d-52561f0c06e5",
+		"name": "Coder Entrega 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20331035"
+	},
+	"item": [
+		{
+			"name": "/api/productos",
+			"item": [
+				{
+					"name": "Listar Productos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"timestamp\": \"2021-06-29T20:00:00.000Z\",\r\n            \"nombre\": \"Televisor\",\r\n            \"descripcion\": \"Ver tv\",\r\n            \"codigo\": \"123\",\r\n            \"foto\": \"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png\",\r\n            \"precio\": 123,\r\n            \"stock\": 10\r\n        }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Producto xID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/productos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"nombre\": \"Producto 3\",\r\n\t\t\"descripcion\": \"Ver\",\r\n\t\t\"codigo\": \"123\",\r\n\t\t\"foto\": \"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png\",\r\n\t\t\"precio\": 123,\r\n\t\t\"stock\": 10\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"nombre\": \"Producto 4\",\r\n\t\t\"descripcion\": \"Ver\",\r\n\t\t\"codigo\": \"123\",\r\n\t\t\"foto\": \"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png\",\r\n\t\t\"precio\": 123,\r\n\t\t\"stock\": 10\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/productos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/productos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/api/carrito",
+			"item": [
+				{
+					"name": "Crear Carrito Nuevo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\t\t\t\t\"nombre\": \"Calculadora\",\r\n\t\t\t\t\"descripcion\": \"Calculo de areas\",\r\n\t\t\t\t\"codigo\": \"123\",\r\n\t\t\t\t\"foto\": \"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png\",\r\n\t\t\t\t\"precio\": 123,\r\n\t\t\t\t\"stock\": 10\r\n}\r\n\t",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Carrito",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar Producto a un Carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\t\t\"nombre\": \"Regla\",\r\n\t\t\t\t\"descripcion\": \"Regla\",\r\n\t\t\t\t\"codigo\": \"123\",\r\n\t\t\t\t\"foto\": \"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png\",\r\n\t\t\t\t\"precio\": 123,\r\n\t\t\t\t\"stock\": 10\r\n\t\t\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/1/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								"1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Producto de un Carrito",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/1/productos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								"1",
+								"productos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Listar Productos del Carrito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/1/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"1",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
